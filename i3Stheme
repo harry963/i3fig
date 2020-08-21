@@ -13,7 +13,7 @@ cd ~/i3themes
 unzip HackTTF.zip
 cd ttf
 mkdir ~/.fonts/
-mv *.tff ~/.fonts/
+mv *.ttf ~/.fonts/
 cd ~/i3themes
 # termite stuff
 mkdir ~/.config/termite/
