@@ -5,12 +5,10 @@ sudo pacman -Syyu
 sudo pacman -S feh xterm termite dmenu lightdm lightdm-gtk-greeter xorg-server i3 pulseaudio playerctl pavucontrol unzip arandr xorg-xrandr wget lxappearance binutils  base-devel git xarchiver htop i3blocks 
 #clones the YAY AUR HELPER
 git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+yay -S vertex-themes
+yay -S mate-themes
 #enables lightdm
-systemctl enable lightdm.service
+sudo systemctl enable lightdm.service
 #insturcts the user on how to install YAY 
-echo now run the following
-echo cd yay
-echo makepkg -si
-echo yay -S vertex-themes
-echo yay -S mate-themes
-
