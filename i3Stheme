@@ -27,12 +27,6 @@ cd ~/.config/termite/
 cp ~/i3fig/Tconfig ~/.config/termite/config
 cd ~/i3themes
 
-#Gedit
-wget https://raw.githubusercontent.com/dracula/gedit/master/dracula.xml
-mkdir $HOME/.local/share/
-mkdir $HOME/.local/share/gedit/
-mv dracula.xml $HOME/.local/share/gedit/styles/
-cd ~/i3themes 
 
 #i3blocks
 
@@ -45,5 +39,4 @@ cd ~/i3themes
 #i3 fig
 cd ~/i3themes
 mkdir ~/.config/i3/
-wget https://github.com/harry963/i3fig/blob/master/i3config
 cp ~/i3fig/i3config ~/.config/i3/config
