@@ -1,7 +1,8 @@
-#!/bin/bash
+##!/bin/bash
 # I3 fig setup
 #after main setup
 #theming
+echo RUN AS ROOT
 cd
 mkdir i3themes
 cd ~/i3themes
@@ -21,7 +22,7 @@ cd ~/.config/termite/
 cp ~/i3fig/Tconfig ~/.config/termite/config
 cd ~/i3themes
 #i3blocks
-sudo mkdir /usr/share/i3blocks/
+mkdir /usr/share/i3blocks/
 mkdir ~/i3themes/i3blocks/
 cd ~/i3themes
 cp ~/i3fig/i3blocks.conf ~/i3themes
