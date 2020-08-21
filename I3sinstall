@@ -1,0 +1,13 @@
+#!/bin/bash
+# I3 install
+sudo pacman -Syyu
+sudo pacman -S feh xterm termite dmenu lightdm lightdm-gtk-greeter lightdm-webkit2-greeter xorg-server i3 pulseaudio playerctl pavucontrol unzip arandr xorg-xranda wget lxappearance binutils  base-devel git xarchiver htop i3blocks gedit
+sudo git clone https://aur.archlinux.org/yay-git.git
+cd yay
+makepkg -s
+sudo pacman -S mate-themes
+yay -S vertex-themes
+wget https://github.com/harry963/i3fig/blob/master/i3Stheme
+#
+sudo systemctl enable lightdm.service
+
