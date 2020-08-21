@@ -8,7 +8,7 @@ cd ~/i3themes
 cp ~/i3fig/arch.png ~/i3themes
 cd
 #fonts
-cp ~/i3fig/HackTT.zip ~/i3themes
+cp ~/i3fig/HackTTF.zip ~/i3themes
 cd ~/i3themes
 unzip HackTTF.zip
 cd ttf
