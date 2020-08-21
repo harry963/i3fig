@@ -3,14 +3,16 @@
 #after main setup
 #theming
 
+
 cd
 mkdir i3themes
-cd i3themes
-wget https://github.com/harry963/i3fig/blob/master/arch.png
-
+cd ~/i3themes
+cp ~/i3fig/arch.png ~/i3themes
+cd
 
 #fonts
-wget https://github.com/harry963/i3fig/blob/master/HackTTF.zip
+cp ~/3fig/HackTT.zip ~/i3themes
+cd ~/i3themes
 unzip HackTTF.zip
 cd ttf
 mkdir ~/.fonts/
@@ -20,27 +22,28 @@ cd ~/i3themes
 
 
 #termite stuff
-#wget https://github.com/harry963/i3fig/blob/master/Tconfig
-#mkdir ~/.config/termite/
-#cd ~/.config/termite/
-#cp ~/i3themes/Tconfig ~/.config/termite/config
-#cd ~/i3themes
+mkdir ~/.config/termite/
+cd ~/.config/termite/
+cp ~/i3fig/Tconfig ~/.config/termite/config
+cd ~/i3themes
 
 #Gedit
 wget https://raw.githubusercontent.com/dracula/gedit/master/dracula.xml
-mkdir $HOME/.local/share/gedit/styles/
+mkdir $HOME/.local/share/
+mkdir $HOME/.local/share/gedit/
 mv dracula.xml $HOME/.local/share/gedit/styles/
 cd ~/i3themes 
+
 #i3blocks
 
 sudo mkdir /usr/share/i3blocks/
 mkdir ~/i3themes/i3blocks/
 cd ~/i3themes
-wget https://github.com/harry963/i3fig/blob/master/i3blocks.conf
+cp ~/i3fig/i3blocks.conf ~/i3themes
 cd ~/i3themes
 
 #i3 fig
 cd ~/i3themes
+mkdir ~/.config/i3/
 wget https://github.com/harry963/i3fig/blob/master/i3config
-cp i3config ~/.config/i3/config
-
+cp ~/i3fig/i3config ~/.config/i3/config
