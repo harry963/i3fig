@@ -11,4 +11,3 @@ yay -S vertex-themes
 yay -S mate-themes
 #enables lightdm
 sudo systemctl enable lightdm.service
-#insturcts the user on how to install YAY 
