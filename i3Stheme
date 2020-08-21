@@ -1,14 +1,14 @@
-##!/bin/bash
+#!/bin/bash
 # I3 fig setup
-#after main setup
-#theming
+# after main setup
+# theming
 echo RUN AS ROOT
 cd
 mkdir i3themes
 cd ~/i3themes
 cp ~/i3fig/arch.png ~/i3themes
 cd
-#fonts
+# fonts
 cp ~/i3fig/HackTTF.zip ~/i3themes
 cd ~/i3themes
 unzip HackTTF.zip
@@ -16,18 +16,18 @@ cd ttf
 mkdir ~/.fonts/
 mv *.tff ~/.fonts/
 cd ~/i3themes
-#termite stuff
+# termite stuff
 mkdir ~/.config/termite/
 cd ~/.config/termite/
 cp ~/i3fig/Tconfig ~/.config/termite/config
 cd ~/i3themes
-#i3blocks
+# i3blocks
 mkdir /usr/share/i3blocks/
 mkdir ~/i3themes/i3blocks/
 cd ~/i3themes
 cp ~/i3fig/i3blocks.conf ~/i3themes
 cd ~/i3themes
-#i3 fig
+# i3 fig
 cd ~/i3themes
 mkdir ~/.config/i3/
 cp ~/i3fig/i3config ~/.config/i3/config
