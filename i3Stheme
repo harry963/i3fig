@@ -36,4 +36,4 @@ mkdir ~/.themes/
 cp -r gtk-master ~/.themes/dracula
 echo run the following
 echo sudo cp -r gtk-master /usr/share/themes/
-echo mkdir /usr/share/i3blocks/
+echo sudo mkdir /usr/share/i3blocks/
