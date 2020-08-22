@@ -29,5 +29,11 @@ cd ~/i3themes
 cd ~/i3themes
 mkdir ~/.config/i3/
 cp ~/i3fig/i3config ~/.config/i3/config
+cd ~/i3fig
+# GTK theme
+unzip gtk-master.zip
+mkdir ~/.themes/
+cp -r gtk-master ~/.themes/dracula
 echo run the following
+echo sudo cp -r gtk-master /usr/share/themes/
 echo mkdir /usr/share/i3blocks/
