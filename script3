@@ -1,0 +1,18 @@
+#!/bin/sh
+#sets up picom and some other things
+#this script should only be ran if screen tearing is an issue
+#if this script isnt ran comment the line in the i3 config relating to picom
+#picom
+sudo pacman -Sy picom
+picom --config ~/.config/picom/picom.conf
+cp ~/i3fig/picom.conf ~/.config/picom/picom.conf
+#redshift (nightlight)
+sudo pacman -S redshift
+#installs aether lightdm theme (optional)
+yay -S lightdm-webkit-theme-aether
+echo -----------------------------
+echo -----------------------------
+echo -----------------------------
+echo if you want to remove redshift
+echo run the following command
+echo sudo pacman -Rcns redshift

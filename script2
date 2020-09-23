@@ -1,0 +1,29 @@
+#!/bin/bash
+# I3 fig setup
+# after main setup
+# theming
+cd
+# fonts
+unzip HackTTF.zip
+cd ttf
+mkdir ~/.fonts/
+mv *.ttf ~/.fonts/
+cd ~/i3fig
+# termite stuff
+mkdir ~/.config/termite/
+cd ~/.config/termite/
+cp ~/i3fig/Tconfig ~/.config/termite/config
+cd ~/i3fig
+# Polybar
+cp $HOME/i3fig/launch.sh  $HOME/.config/polybar/launch.sh
+cp ~/i3fig/polybarconfig ~/.config/polybar/config
+# i3 fig
+mkdir ~/.config/i3/
+cp ~/i3fig/i3config ~/.config/i3/config
+cd ~/i3fig
+# GTK theme
+unzip gtk-master.zip
+mkdir ~/.themes/
+cp -r gtk-master ~/.themes/dracula
+echo run the following
+echo sudo cp -r gtk-master /usr/share/themes/
