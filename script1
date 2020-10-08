@@ -2,7 +2,7 @@
 # I3 install
 sudo pacman -Syyu
 # installs stuff we need
-sudo pacman -S feh xterm termite dmenu xorg-server i3 pulseaudio playerctl pavucontrol unzip arandr xorg-xrandr wget lxappearance binutils  base-devel git xarchiver htop lxsession polkit alacritty
+sudo pacman -S feh xterm termite dmenu xorg-xinit xorg-server i3 pulseaudio playerctl pavucontrol unzip arandr xorg-xrandr wget lxappearance binutils  base-devel git xarchiver htop lxsession polkit alacritty
 # removes i3status cos no one uses it
 sudo pacman -Rncs i3status
 # clones the YAY AUR HELPER
