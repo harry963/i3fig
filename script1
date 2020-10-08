@@ -1,17 +1,21 @@
 #!/bin/bash
 # I3 install
 sudo pacman -Syyu
-#installs stuff we need
+# installs stuff we need
 sudo pacman -S feh xterm termite dmenu xorg-server i3 pulseaudio playerctl pavucontrol unzip arandr xorg-xrandr wget lxappearance binutils  base-devel git xarchiver htop lxsession polkit alacritty
-#removes i3status cos no one uses it
+# removes i3status cos no one uses it
 sudo pacman -Rncs i3status
-#clones the YAY AUR HELPER
+# clones the YAY AUR HELPER
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 yay -S mate-themes polybar
 yay -S breeze-icons
-#installs lightdm
+# installs lightdm
 #sudo pacman -S lightdm lightdm-gtk-greeter
-#enables lightdm
+# enables lightdm
 #sudo systemctl enable lightdm.service
+# install slim dm (like lightdm but more lightweight
+#sudo pacman -S slim 
+# enable slim
+#sudo systemctl enable slim.service
