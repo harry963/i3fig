@@ -9,7 +9,7 @@ cp ~/i3fig/picom.conf ~/.config/picom/picom.conf
 #redshift (nightlight)
 sudo pacman -S redshift
 #installs aether lightdm theme (optional)
-yay -S lightdm-webkit-theme-aether
+#yay -S lightdm-webkit-theme-aether
 echo -----------------------------
 echo -----------------------------
 echo -----------------------------
