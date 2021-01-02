@@ -12,6 +12,7 @@ makepkg -si
 yay -S mate-themes polybar
 yay -S breeze-icons
 cp ~/i3fig/.bash_profile ~/.bash_profile
+cp ~/i3fig/.xinitrc ~/.xinitrc
 # installs lightdm
 #sudo pacman -S lightdm lightdm-gtk-greeter
 # enables lightdm
